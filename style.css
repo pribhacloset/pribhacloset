@@ -1,0 +1,10 @@
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#222}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:rgba(0,0,0,.75);z-index:10}
+.logo{height:60px}.logo:not([src]){display:none}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),linear-gradient(135deg,#111,#555);display:flex;align-items:center;justify-content:center;text-align:center}
+.overlay h1{color:#d4af37;font-size:56px;margin:0}.tag{font-size:24px;color:#fff}
+.btn{display:inline-block;margin-top:20px;padding:14px 28px;background:#d4af37;color:#111;text-decoration:none;border-radius:30px;font-weight:bold}
+.card{max-width:900px;margin:60px auto;padding:40px 20px}
+.dark{background:#111;color:#fff}
+.float{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;text-decoration:none;padding:14px 18px;border-radius:999px}
