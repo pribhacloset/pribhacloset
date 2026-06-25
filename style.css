@@ -1,10 +1,205 @@
-body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#222}
-header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:rgba(0,0,0,.75);z-index:10}
-.logo{height:60px}.logo:not([src]){display:none}
-nav a{color:#fff;text-decoration:none;margin-left:18px}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),linear-gradient(135deg,#111,#555);display:flex;align-items:center;justify-content:center;text-align:center}
-.overlay h1{color:#d4af37;font-size:56px;margin:0}.tag{font-size:24px;color:#fff}
-.btn{display:inline-block;margin-top:20px;padding:14px 28px;background:#d4af37;color:#111;text-decoration:none;border-radius:30px;font-weight:bold}
-.card{max-width:900px;margin:60px auto;padding:40px 20px}
-.dark{background:#111;color:#fff}
-.float{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;text-decoration:none;padding:14px 18px;border-radius:999px}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#222;
+}
+
+/* Navigation */
+
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+.logo img{
+    height:70px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+    animation:fadeUp 1.5s ease;
+}
+
+.hero h1{
+    font-size:70px;
+    font-family:'Cormorant Garamond',serif;
+    color:#D4AF37;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#D4AF37;
+    color:black;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Sections */
+
+section{
+    padding:90px 10%;
+}
+
+h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+    color:#D4AF37;
+    font-family:'Cormorant Garamond',serif;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Contact */
+
+.contact{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+}
+
+/* Footer */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+padding:15px 20px;
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:10px;
+display:inline-block;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.logo img{
+height:55px;
+}
+
+}
