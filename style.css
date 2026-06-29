@@ -213,14 +213,6 @@ height:55px;
 #topBtn:hover{
     transform:scale(1.1);
 }
-.hero{
-height:100vh;
-background:url("hero-banner.PNG") center center/cover no-repeat;
-display:flex;
-align-items:center;
-padding-left:8%;
-position:relative;
-}
 
 .hero-overlay{
 position:absolute;
